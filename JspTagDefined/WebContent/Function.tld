@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<description>自定义方法</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>fns</short-name>
+	
+	
+	<function>
+		<description>判断是否为空返回true or false</description>
+		<name>isNull</name>
+		<function-class>tag.Function</function-class>
+		<function-signature>
+		java.lang.boolean isNull(java.lang.String)
+		</function-signature>
+		<example>${fns:isNull(str)}</example>
+	</function>	
+	
+	<function>
+		<description>字典转换</description>
+		<name>change</name>
+		<function-class>tag.Function</function-class>
+		<function-signature>
+		java.lang.String change(java.lang.String)
+		</function-signature>
+		<example>${fns:change(str)}</example>
+	</function>
+	
+</taglib>
